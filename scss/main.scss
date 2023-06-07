@@ -6,9 +6,15 @@
 .header {
     @include flexcenter(space-between, center, row);
 
-    // #{&}_left{
+    @include Tablet {
+        @include flexcenter(space-between, center, column);
+    }
 
-    // }
+    @include Mobile-L {
+        img {
+            width: 100%;
+        }
+    }
 
     #{&}_right {
         .social-icon {
@@ -49,7 +55,18 @@ nav {
     padding-bottom: 10%;
 
     h1 {
+        @include Mobile-L {
+            font-size: 70px;
+        }
+
+        @include Mobile-S {
+            font-size: 50px;
+        }
+
+        // font-family: url(./fonts/GreatVibes-Regular.otf);
         font-size: 100px;
+        //     font-family: $font1;
+        //    src: url("/fonts/GreatVibes-Regular.otf");
     }
 
     h2 {
@@ -63,22 +80,51 @@ nav {
     }
 
     button {
+
         background-color: #350a37;
         color: white;
         font-size: 15px;
         border: none;
+
+        margin-left: 57%;
         // padding: 10px;
 
     }
 }
 
 .Welcome {
-    img {
-        position: absolute;
-        z-index: -1;
+    .w-img {
+        @include Tablet {
+            width: 100%;
+        }
+
+        width: 100%;
+
+        img {
+            @include Tablet {
+                position: relative;
+                width: 80%;
+                left: 6%;
+            }
+
+            position: absolute;
+            z-index: -1;
+            // width: 100%;
+        }
     }
 
     .wel-text {
+        @include Tablet {
+            position: relative;
+            left: 30%;
+            margin-top: 5%;
+            margin-left: -30%;
+            // margin-right: 30%;
+            padding: 15px 6px 10px;
+            // display: flex;
+            // flex-direction: column;
+        }
+
         position: relative;
         left: 30%;
         margin-top: 5%;
@@ -97,11 +143,70 @@ nav {
     color: #ffffff;
     text-align: center;
     background-color: #34073f;
+
+    .ost {
+        text-align: center;
+
+        h1 {
+            font-size: 30px;
+        }
+
+    }
 }
 
-// .client{}
+.client {
+    .c-img {
+        @include Tablet {
+            width: 100%;
+            margin-left: -10%;
+        }
 
+        img {
+            @include Tablet {
+                position: relative;
+                width: 80%;
+                left: 6%;
+            }
 
-.blog{
+            position: absolute;
+            margin-left: 18%;
+            z-index: -1;
+        }
+
+        .ctext {
+            @include Tablet {
+                position: relative;
+                // right: 23%;
+                margin-top: 5%;
+                // margin-left: -30%;
+                // margin-right: 30%;
+                padding: 15px 6px 10px;
+                // display: flex;
+                // flex-direction: column;
+            }
+            position: relative;
+            /* left: 30%; */
+            right: 23%;
+            text-align: end;
+            background-color: #34073f;
+            color: white;
+            margin-left: 28%;
+            margin-top: 1%;
+            // margin-right: 26%;
+            padding: 16px 25px 10px;
+            top: 115px;
+        }
+
+        .nimg {
+            @include flexcenter(flex-end, center, row);
+            // p{
+
+            // }
+        }
+    }
+}
+
+.blog {
+    margin-top: 55%;
     text-align: center;
 }

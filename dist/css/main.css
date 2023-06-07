@@ -10,6 +10,19 @@
   align-items: center;
   flex-direction: row;
 }
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 427px) {
+  .header img {
+    width: 100%;
+  }
+}
 .header .header_right .social-icon a {
   margin-right: 10px;
   font-size: 35px;
@@ -43,6 +56,16 @@ nav ul {
 .home h1 {
   font-size: 100px;
 }
+@media (max-width: 427px) {
+  .home h1 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 320px) {
+  .home h1 {
+    font-size: 50px;
+  }
+}
 .home h2 {
   text-align: end;
   font-size: 30px;
@@ -56,11 +79,27 @@ nav ul {
   color: white;
   font-size: 15px;
   border: none;
+  margin-left: 57%;
 }
 
-.Welcome img {
+.Welcome .w-img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .Welcome .w-img {
+    width: 100%;
+  }
+}
+.Welcome .w-img img {
   position: absolute;
   z-index: -1;
+}
+@media (max-width: 768px) {
+  .Welcome .w-img img {
+    position: relative;
+    width: 80%;
+    left: 6%;
+  }
 }
 .Welcome .wel-text {
   position: relative;
@@ -73,6 +112,15 @@ nav ul {
   margin-right: 33%;
   padding: 15px 25px 10px;
 }
+@media (max-width: 768px) {
+  .Welcome .wel-text {
+    position: relative;
+    left: 30%;
+    margin-top: 5%;
+    margin-left: -30%;
+    padding: 15px 6px 10px;
+  }
+}
 
 .os {
   margin-top: 20%;
@@ -80,7 +128,58 @@ nav ul {
   text-align: center;
   background-color: #34073f;
 }
+.os .ost {
+  text-align: center;
+}
+.os .ost h1 {
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .client .c-img {
+    width: 100%;
+    margin-left: -10%;
+  }
+}
+.client .c-img img {
+  position: absolute;
+  margin-left: 18%;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .client .c-img img {
+    position: relative;
+    width: 80%;
+    left: 6%;
+  }
+}
+.client .c-img .ctext {
+  position: relative;
+  /* left: 30%; */
+  right: 23%;
+  text-align: end;
+  background-color: #34073f;
+  color: white;
+  margin-left: 28%;
+  margin-top: 1%;
+  padding: 16px 25px 10px;
+  top: 115px;
+}
+@media (max-width: 768px) {
+  .client .c-img .ctext {
+    position: relative;
+    margin-top: 5%;
+    padding: 15px 6px 10px;
+  }
+}
+.client .c-img .nimg {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
 
 .blog {
+  margin-top: 55%;
   text-align: center;
 }/*# sourceMappingURL=main.css.map */
