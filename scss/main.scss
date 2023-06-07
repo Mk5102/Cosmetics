@@ -20,7 +20,7 @@
 
         .logre {
             font-size: 20px;
-            @include flexcenter(end, normal, row);
+            @include flexcenter(flex-end, normal, row);
 
             a {
                 padding-right: 10px;
