@@ -156,19 +156,20 @@ nav {
 
 .client {
     .c-img {
+       
         // {
         //     @include Tablet {
         //         width: 100%;
         //         margin-left: -10%;
         //     }
 
-        //     img {
-        //         @include Tablet {
-        //             position: relative;
-        //             width: 80%;
-        //             left: 6%;
-        //         }
-
+            img {
+                width: 100%;
+                @include Tablet {
+                    position: relative;
+                    width: 80%;
+                    left: 6%;
+                }}
         position: absolute;
         margin-left: 18%;
         z-index: -1;
@@ -194,7 +195,9 @@ h1{
         .cp{
             @include flexcenter(center,center ,row );
             font-size: 16px;
-
+// p{
+    
+// }
         }
         .nimg {
             @include flexcenter(flex-end, center, row);
@@ -228,5 +231,15 @@ h1{
                 padding-right: 5%;
             }
         }
+    }
+}
+
+
+.footer{
+    .footertext{
+        background-color: black;
+        color: white;
+        text-align: center;
+        height: 40px;
     }
 }

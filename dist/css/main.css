@@ -141,6 +141,16 @@ nav ul {
   margin-left: 18%;
   z-index: -1;
 }
+.client .c-img img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .client .c-img img {
+    position: relative;
+    width: 80%;
+    left: 6%;
+  }
+}
 .client .ctext {
   position: relative;
   right: 23%;
@@ -207,4 +217,11 @@ nav ul {
 }
 .contact .right .phone a {
   padding-right: 5%;
+}
+
+.footer .footertext {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 40px;
 }/*# sourceMappingURL=main.css.map */
