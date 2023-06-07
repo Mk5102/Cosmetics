@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.header .header_right .social-icon a {
+  margin-right: 10px;
+  font-size: 35px;
+}
+.header .header_right .logre {
+  font-size: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: normal;
+  flex-direction: row;
+}
+.header .header_right .logre a {
+  padding-right: 10px;
+}
+
+nav {
+  height: 60px;
+  background-color: #500f61;
+}
+nav ul {
+  padding-right: 10%;
+  font-size: 20px;
+}
+
+.home {
+  background-image: url("/img/Home background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 10%;
+}
+.home h1 {
+  font-size: 100px;
+}
+.home h2 {
+  text-align: end;
+  font-size: 30px;
+  color: #9e56a1;
+}
+.home p {
+  text-align: end;
+}
+.home button {
+  background-color: #350a37;
+  color: white;
+  font-size: 15px;
+  border: none;
+}
+
+.Welcome img {
+  position: absolute;
+  z-index: -1;
+}
+.Welcome .wel-text {
+  position: relative;
+  left: 30%;
+  margin-top: 5%;
+  text-align: center;
+  background-color: #34073f;
+  color: white;
+  margin-left: 33%;
+  margin-right: 33%;
+  padding: 15px 25px 10px;
+}
+
+.os {
+  margin-top: 20%;
+  color: #ffffff;
+  text-align: center;
+  background-color: #34073f;
+}
+
+.blog {
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
