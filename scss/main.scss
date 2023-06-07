@@ -156,58 +156,54 @@ nav {
 
 .client {
     .c-img {
-        @include Tablet {
-            width: 100%;
-            margin-left: -10%;
+        // {
+        //     @include Tablet {
+        //         width: 100%;
+        //         margin-left: -10%;
+        //     }
+
+        //     img {
+        //         @include Tablet {
+        //             position: relative;
+        //             width: 80%;
+        //             left: 6%;
+        //         }
+
+        position: absolute;
+        margin-left: 18%;
+        z-index: -1;
+    }
+
+    .ctext {
+        position: relative;
+        // left: 30%;
+        right: 23%;
+        text-align: end;
+        background-color: #34073f;
+        color: white;
+        margin-left: 28%;
+        margin-top: 1%;
+        margin-right: 26%;
+        padding: 16px 25px 10px;
+        top: 115px;
+h1{
+    font-size: 40px;
+	font-weight: 600;
+    text-align: center;
+}
+        .cp{
+            @include flexcenter(center,center ,row );
+            font-size: 16px;
+
         }
-
-        img {
-            @include Tablet {
-                position: relative;
-                width: 80%;
-                left: 6%;
-            }
-
-            position: absolute;
-            margin-left: 18%;
-            z-index: -1;
-        }
-
-        .ctext {
-            @include Tablet {
-                position: relative;
-                // right: 23%;
-                margin-top: 5%;
-                // margin-left: -30%;
-                // margin-right: 30%;
-                padding: 15px 6px 10px;
-                // display: flex;
-                // flex-direction: column;
-            }
-            position: relative;
-            /* left: 30%; */
-            right: 23%;
-            text-align: end;
-            background-color: #34073f;
-            color: white;
-            margin-left: 28%;
-            margin-top: 1%;
-            // margin-right: 26%;
-            padding: 16px 25px 10px;
-            top: 115px;
-        }
-
         .nimg {
             @include flexcenter(flex-end, center, row);
-            // p{
-
-            // }
         }
     }
 }
 
 .blog {
-    margin-top: 55%;
+    margin-top: 25%;
     text-align: center;
 }
 
@@ -217,5 +213,20 @@ nav {
     color: #ffffff;
     h1{
         text-align: center;
+    }
+    .right{
+        @include flexcenter(flex-start,flex-start,column);
+        .mail{
+            @include flexcenter(center,flex-start,row);
+            a{
+                padding-right: 5%;
+            }
+        }
+        .phone{
+            @include flexcenter(center,baseline ,row);
+            a{
+                padding-right: 5%;
+            }
+        }
     }
 }

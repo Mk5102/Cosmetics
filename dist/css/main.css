@@ -135,44 +135,36 @@ nav ul {
   font-size: 30px;
 }
 
-@media (max-width: 768px) {
-  .client .c-img {
-    width: 100%;
-    margin-left: -10%;
-  }
-}
-.client .c-img img {
+.client .c-img {
   position: absolute;
   margin-left: 18%;
   z-index: -1;
 }
-@media (max-width: 768px) {
-  .client .c-img img {
-    position: relative;
-    width: 80%;
-    left: 6%;
-  }
-}
-.client .c-img .ctext {
+.client .ctext {
   position: relative;
-  /* left: 30%; */
   right: 23%;
   text-align: end;
   background-color: #34073f;
   color: white;
   margin-left: 28%;
   margin-top: 1%;
+  margin-right: 26%;
   padding: 16px 25px 10px;
   top: 115px;
 }
-@media (max-width: 768px) {
-  .client .c-img .ctext {
-    position: relative;
-    margin-top: 5%;
-    padding: 15px 6px 10px;
-  }
+.client .ctext h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
 }
-.client .c-img .nimg {
+.client .ctext .cp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 16px;
+}
+.client .ctext .nimg {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -180,7 +172,7 @@ nav ul {
 }
 
 .blog {
-  margin-top: 55%;
+  margin-top: 25%;
   text-align: center;
 }
 
@@ -190,4 +182,28 @@ nav ul {
 }
 .contact h1 {
   text-align: center;
+}
+.contact .right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.contact .right .mail {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.contact .right .mail a {
+  padding-right: 5%;
+}
+.contact .right .phone {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: row;
+}
+.contact .right .phone a {
+  padding-right: 5%;
 }/*# sourceMappingURL=main.css.map */
