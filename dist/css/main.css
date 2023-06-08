@@ -43,6 +43,11 @@ nav {
   height: 60px;
   background-color: #500f61;
 }
+nav .navbar-collapse {
+  margin-top: 1.8%;
+  background-color: rgb(80, 15, 97);
+  text-align: center;
+}
 nav ul {
   padding-right: 10%;
   font-size: 20px;
@@ -83,24 +88,9 @@ nav ul {
   margin-left: 57%;
 }
 
-.Welcome .w-img {
+.Welcome {
+  position: relative;
   width: 100%;
-}
-@media (max-width: 768px) {
-  .Welcome .w-img {
-    width: 100%;
-  }
-}
-.Welcome .w-img img {
-  position: absolute;
-  z-index: -1;
-}
-@media (max-width: 768px) {
-  .Welcome .w-img img {
-    position: relative;
-    width: 80%;
-    left: 6%;
-  }
 }
 .Welcome .wel-text {
   position: relative;
@@ -111,7 +101,7 @@ nav ul {
   color: white;
   margin-left: 33%;
   margin-right: 33%;
-  padding: 15px 25px 10px;
+  padding: 15px 7px 10px;
 }
 @media (max-width: 768px) {
   .Welcome .wel-text {
