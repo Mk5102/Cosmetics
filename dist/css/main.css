@@ -44,7 +44,6 @@ nav {
   background-color: #500f61;
 }
 nav .navbar-collapse {
-  margin-top: 1.8%;
   background-color: rgb(80, 15, 97);
   text-align: center;
 }
@@ -260,8 +259,88 @@ nav ul {
   height: 90%;
 }
 
-.blog {
+.blog h2 {
+  font-size: 30px;
   text-align: center;
+}
+.blog p {
+  font-size: 18px;
+  height: 60px;
+  overflow: hidden;
+  text-align: center;
+}
+.blog .blog1 .card-body {
+  position: relative;
+}
+.blog .blog1 .card-body h4 {
+  position: absolute;
+  background: #34073f;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 25px 37px;
+  color: #fff;
+}
+.blog .blog1 .card-body h4 span {
+  font-size: 30px;
+  font-weight: bold;
+}
+.blog .blog1 .card-body h3 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #34073f;
+  margin: 100px 0 20px 0;
+}
+.blog .blog1 .card-body h3:hover {
+  color: #34073f;
+}
+.blog .blog1 .card-body p {
+  font-size: 14px;
+  line-height: 20px;
+  height: 80px;
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 32px;
+}
+.blog .blog1 .card-body .post {
+  margin: 0;
+  padding: 0;
+}
+.blog .blog1 .card-body .post li {
+  list-style: none;
+  display: inline-block;
+  color: #34073f;
+  padding: 0 10px;
+  font-weight: bold;
+}
+.blog .blog1 .card-body .post li:first-child {
+  border-right: 1px solid #34073f;
+  padding-left: 0;
+}
+.blog .blog1 .card-body .post li i {
+  margin: 0 10px 0 0;
+  font-size: 18px;
+}
+.blog .indicator {
+  position: relative;
+}
+.blog .indicator a {
+  margin: 0 13.5px;
+}
+.blog .indicator a i {
+  font-size: 14px;
+  color: #fff;
+  padding: 7.5px 12.5px;
+  background: #34073f;
+}
+.blog .indicator a:hover i {
+  background: #9d54a0;
+}
+.blog .indicator .right-arrow {
+  float: right;
+}
+.blog .indicator .left-arrow {
+  float: left;
 }
 
 .contact {
