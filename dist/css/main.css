@@ -92,6 +92,17 @@ nav ul {
   position: relative;
   width: 100%;
 }
+.Welcome .w-img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .Welcome .w-img {
+    width: 100%;
+  }
+}
+.Welcome .w-img img {
+  width: 80%;
+}
 .Welcome .wel-text {
   width: 556px;
   height: 365px;
@@ -147,7 +158,6 @@ nav ul {
 }
 
 .os {
-  margin-top: 20%;
   color: #ffffff;
   text-align: center;
   background-color: #34073f;
@@ -159,54 +169,98 @@ nav ul {
   font-size: 30px;
 }
 
+.client {
+  position: relative;
+}
 .client .c-img {
-  position: absolute;
-  margin-left: 18%;
+  position: relative;
+  margin-left: 10%;
   z-index: -1;
 }
 .client .c-img img {
   width: 100%;
 }
-@media (max-width: 768px) {
-  .client .c-img img {
-    position: relative;
-    width: 80%;
-    left: 6%;
-  }
-}
 .client .ctext {
-  position: relative;
-  right: 23%;
-  text-align: end;
-  background-color: #34073f;
+  width: 556px;
+  height: 365px;
+  background: #34073f;
+  position: absolute;
+  left: 100px;
+  top: 120px;
+  padding: 52px 80px 20px 80px;
   color: white;
-  margin-left: 28%;
-  margin-top: 1%;
-  margin-right: 26%;
-  padding: 16px 25px 10px;
-  top: 115px;
 }
-.client .ctext h1 {
-  font-size: 40px;
-  font-weight: 600;
+.client .ctext h3 {
+  font-size: 30px;
+  margin: 0;
   text-align: center;
+  z-index: 999;
+  position: relative;
 }
-.client .ctext .cp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  font-size: 16px;
+.client .ctext p {
+  display: block;
+  float: left;
+  font-size: 12px;
+  line-height: 20px;
+  height: 80px;
+  overflow: hidden;
+  padding-left: 30px;
+  position: relative;
+}
+.client .ctext p::before {
+  background-repeat: no-repeat;
+  width: 37px;
+  height: 31px;
+  content: " ";
+  position: absolute;
+  top: -5px;
+  left: 0;
 }
 .client .ctext .nimg {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: row;
+  display: block;
+  float: right;
+}
+
+.testimonialName {
+  display: block;
+  float: left;
+  margin-right: 60px;
+  text-align: right;
+}
+.testimonialName h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.testimonialName h6 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.nimg {
+  position: relative;
+}
+.nimg .nimgm {
+  display: block;
+  float: right;
+}
+.nimg .nimgm .img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.nimg .overlay {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: 3px solid #34073f;
+  transition: none;
+  width: 36%;
+  height: 90%;
 }
 
 .blog {
-  margin-top: 25%;
   text-align: center;
 }
 
@@ -216,6 +270,29 @@ nav ul {
 }
 .contact h1 {
   text-align: center;
+}
+.contact .form-control {
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #757575;
+  box-shadow: none;
+  color: white;
+  margin-bottom: 0px;
+}
+.contact .form-control:hover {
+  border-bottom: 1px solid white;
+}
+.contact .btn {
+  background: white;
+  color: #9d54a0;
+  padding: 10px 60px;
+  margin: 0 30%;
+  float: none;
+}
+.contact .btn:hover {
+  color: #181415;
+  background-color: white;
 }
 .contact .right {
   display: flex;
