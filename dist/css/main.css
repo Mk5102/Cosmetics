@@ -173,7 +173,8 @@ nav ul {
 }
 .client .c-img {
   position: relative;
-  margin-left: 10%;
+  margin-left: 20%;
+  margin-right: 5%;
   z-index: -1;
 }
 .client .c-img img {
@@ -199,9 +200,8 @@ nav ul {
 .client .ctext p {
   display: block;
   float: left;
-  font-size: 12px;
+  font-size: 17px;
   line-height: 20px;
-  height: 80px;
   overflow: hidden;
   padding-left: 30px;
   position: relative;
@@ -216,23 +216,40 @@ nav ul {
   left: 0;
 }
 .client .ctext .nimg {
-  display: block;
+  display: flex;
   float: right;
+  justify-content: center;
+  align-content: center;
 }
-
-.testimonialName {
-  display: block;
+.client .ctext .nimg .nimgm {
+  display: flex;
+  flex-direction: column;
   float: left;
+  padding-top: 7%;
   margin-right: 60px;
-  text-align: right;
+  text-align: center;
 }
-.testimonialName h5 {
-  font-size: 18px;
-  font-weight: 600;
+.client .whiteborder {
+  width: 555px;
+  height: 365px;
+  background: transparent;
+  border: 3px solid white;
+  position: absolute;
+  left: 130px;
+  top: 150px;
+  z-index: 2;
+  padding: 52px 80px 20px 80px;
 }
-.testimonialName h6 {
-  font-size: 18px;
-  font-weight: lighter;
+.client .purpleborder {
+  width: 555px;
+  height: 365px;
+  background: transparent;
+  border: 3px solid #34073f;
+  position: absolute;
+  left: 160px;
+  top: 180px;
+  z-index: 0;
+  padding: 52px 80px 20px 80px;
 }
 
 .nimg {
@@ -398,6 +415,43 @@ nav ul {
   padding-right: 5%;
 }
 
+.footer .Follow h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #34073f;
+}
+.footer .Follow .social {
+  margin-top: 5%;
+  text-align: center;
+}
+.footer .Follow .social .socialicon {
+  margin-top: 10%;
+  padding-top: 15%;
+  background: #1d191a;
+  height: 80px;
+  width: 80px;
+  float: left;
+  display: table;
+  vertical-align: middle;
+  border: none;
+  position: relative;
+  transform: rotate(-45deg);
+  margin-right: 36px;
+}
+.footer .Follow .social a {
+  margin-top: 10%;
+  font-size: 22PX;
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  list-style: none;
+  text-decoration: none;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
 .footer .footertext {
   background-color: black;
   color: white;
