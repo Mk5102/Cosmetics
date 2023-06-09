@@ -52,9 +52,6 @@ nav {
 }
 
 .home {
-    // @include background(cover,no-repeat){
-    //     background-image: url("./img/Home background.png");
-    // }
     background-image:url('/img/Home background.png');
     background-size: cover;
     background-repeat: no-repeat;
