@@ -1,4 +1,5 @@
-@import url("/fonts/GreatVibes-Regular.otf");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700,700i&subset=latin-ext,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes&subset=latin-ext");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -41,10 +42,10 @@
 
 nav {
   height: 60px;
-  background-color: #500f61;
+  background-color: #34073f;
 }
 nav .navbar-collapse {
-  background-color: rgb(80, 15, 97);
+  background-color: #34073f;
   text-align: center;
 }
 nav ul {
@@ -60,6 +61,7 @@ nav ul {
 }
 .home h1 {
   font-size: 100px;
+  font-family: "Great Vibes";
 }
 @media (max-width: 427px) {
   .home h1 {
@@ -75,6 +77,7 @@ nav ul {
   text-align: end;
   font-size: 30px;
   color: #9e56a1;
+  font-family: "Josefin Sans";
 }
 .home p {
   text-align: end;
@@ -182,11 +185,11 @@ nav ul {
 }
 .client .ctext {
   width: 556px;
-  height: 365px;
+  height: 400px;
   background: #34073f;
   position: absolute;
   left: 100px;
-  top: 120px;
+  top: 70px;
   padding: 52px 80px 20px 80px;
   color: white;
 }
@@ -216,10 +219,8 @@ nav ul {
   left: 0;
 }
 .client .ctext .nimg {
-  display: flex;
   float: right;
-  justify-content: center;
-  align-content: center;
+  margin-right: -12%;
 }
 .client .ctext .nimg .nimgm {
   display: flex;
@@ -231,24 +232,24 @@ nav ul {
 }
 .client .whiteborder {
   width: 555px;
-  height: 365px;
+  height: 400px;
   background: transparent;
   border: 3px solid white;
   position: absolute;
   left: 130px;
-  top: 150px;
+  top: 110px;
   z-index: 2;
   padding: 52px 80px 20px 80px;
 }
 .client .purpleborder {
   width: 555px;
-  height: 365px;
+  height: 400px;
   background: transparent;
   border: 3px solid #34073f;
   position: absolute;
   left: 160px;
-  top: 180px;
-  z-index: 0;
+  top: 150px;
+  z-index: -1;
   padding: 52px 80px 20px 80px;
 }
 
@@ -378,6 +379,12 @@ nav ul {
 }
 .contact .form-control:hover {
   border-bottom: 1px solid white;
+}
+.contact ::-moz-placeholder {
+  color: whitesmoke;
+}
+.contact ::placeholder {
+  color: whitesmoke;
 }
 .contact .btn {
   background: white;
