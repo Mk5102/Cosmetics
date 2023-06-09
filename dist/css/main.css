@@ -190,17 +190,24 @@ body {
 
 .client {
   position: relative;
-}
-.client .c-img {
-  position: relative;
+  width: 100%;
   margin-left: 20%;
   margin-right: 5%;
   z-index: -1;
 }
-.client .c-img img {
-  width: 100%;
+.client .c-img {
+  width: 95%;
 }
-.client .ctext {
+@media (max-width: 768px) {
+  .client .c-img {
+    display: none;
+  }
+}
+.client .c-img img {
+  width: 80%;
+}
+
+.ctext {
   width: 556px;
   height: 400px;
   background: #34073f;
@@ -210,14 +217,14 @@ body {
   padding: 52px 80px 20px 80px;
   color: white;
 }
-.client .ctext h3 {
+.ctext h3 {
   font-size: 30px;
   margin: 0;
   text-align: center;
   z-index: 999;
   position: relative;
 }
-.client .ctext p {
+.ctext p {
   display: block;
   float: left;
   font-size: 17px;
@@ -226,7 +233,7 @@ body {
   padding-left: 30px;
   position: relative;
 }
-.client .ctext p::before {
+.ctext p::before {
   background-repeat: no-repeat;
   width: 37px;
   height: 31px;
@@ -235,11 +242,11 @@ body {
   top: -5px;
   left: 0;
 }
-.client .ctext .nimg {
+.ctext .nimg {
   float: right;
   margin-right: -12%;
 }
-.client .ctext .nimg .nimgm {
+.ctext .nimg .nimgm {
   display: flex;
   flex-direction: column;
   float: left;
@@ -247,7 +254,8 @@ body {
   margin-right: 60px;
   text-align: center;
 }
-.client .whiteborder {
+
+.whiteborder {
   width: 555px;
   height: 400px;
   background: transparent;
@@ -258,7 +266,8 @@ body {
   z-index: 2;
   padding: 52px 80px 20px 80px;
 }
-.client .purpleborder {
+
+.purpleborder {
   width: 555px;
   height: 400px;
   background: transparent;
