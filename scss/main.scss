@@ -35,27 +35,13 @@
     }
 }
 
-nav {
-    height: 60px;
-    background-color: #34073f;
-
-    .navbar-collapse {
-        // margin-top: 1.8%;
-        background-color: #34073f;
-        text-align: center;
-    }
-
-    ul {
-        padding-right: 10%;
-        font-size: 20px;
-    }
-}
 
 .home {
     background-image:url('/img/Home background.png');
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 10%;
+    
 
     h1 {
         @include Mobile-L {

@@ -40,19 +40,6 @@
   padding-right: 10px;
 }
 
-nav {
-  height: 60px;
-  background-color: #34073f;
-}
-nav .navbar-collapse {
-  background-color: #34073f;
-  text-align: center;
-}
-nav ul {
-  padding-right: 10%;
-  font-size: 20px;
-}
-
 .home {
   background-image: url("/img/Home background.png");
   background-size: cover;
