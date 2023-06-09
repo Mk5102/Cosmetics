@@ -2,6 +2,9 @@
 @import 'mixin';
 @import 'variables';
 
+body {
+    font-family: $font-family_2;
+}
 
 .header {
     @include flexcenter(space-between, center, row);
@@ -37,13 +40,16 @@
 
 
 .home {
-    background-image:url('/img/Home background.png');
+    background-image: url('/img/Home background.png');
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 10%;
-    
+    text-align: end;
+
 
     h1 {
+        text-align: left;
+
         @include Mobile-L {
             font-size: 70px;
         }
@@ -75,7 +81,7 @@
         font-size: 15px;
         border: none;
 
-        margin-left: 57%;
+        margin-left: 60%;
         // padding: 10px;
 
     }
@@ -86,8 +92,10 @@
     width: 100%;
 
     .w-img {
+
         @include Tablet {
             width: 100%;
+            display: none;
         }
 
         width: 100%;
@@ -98,16 +106,17 @@
     }
 
     .wel-text {
-        // @include Tablet {
-        //     position: relative;
-        //     left: 30%;
-        //     margin-top: 5%;
-        //     margin-left: -30%;
-        //     // margin-right: 30%;
-        //     padding: 15px 6px 10px;
-        //     // display: flex;
-        //     // flex-direction: column;
-        // }
+        @include Tablet {
+            position: relative;
+            width: 100%;
+            margin-top: 5%;
+            top: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
         width: 556px;
         height: 365px;
@@ -115,12 +124,9 @@
         position: absolute;
         right: 50px;
         top: 120px;
-        // padding: 42px 50px 20px 50px;
         color: #ffffff;
         text-align: center;
-        z-index: +1;
-
-        // font-family: $font-family_1;
+        z-index:+1;
         h3 {
             font-size: 30px;
             margin: 0;
@@ -142,29 +148,36 @@
             float: none;
             margin: 0 auto;
             position: relative;
-            // z-index: +1;
         }
     }
 
     .whiteborder {
+        @include Tablet {
+            display: none;
+        }
+
         width: 555px;
         height: 365px;
         background: transparent;
         border: 3px solid white;
         position: absolute;
-        right: 130px;
+        right: 80px;
         top: 150px;
-        z-index: +2;
+        z-index:+2;
         padding: 52px 80px 20px 80px;
     }
 
     .purpleborder {
+        @include Tablet {
+            display: none;
+        }
+
         width: 555px;
         height: 365px;
         background: transparent;
         border: 3px solid #34073f;
         position: absolute;
-        right: 160px;
+        right: 100px;
         top: 180px;
         z-index: 0;
         padding: 52px 80px 20px 80px;
@@ -338,7 +351,7 @@
 
     p {
         font-size: 18px;
-        height: 60px;
+        height: 80px;
         overflow: hidden;
         text-align: center;
     }
@@ -412,7 +425,7 @@
         position: relative;
 
         a {
-            margin: 0 13.5px;
+            margin: 0 15.5px;
 
             i {
                 font-size: 14px;
@@ -507,6 +520,12 @@
             font-size: 30px;
             text-align: center;
             color: #34073f;
+        }
+
+        .logo {
+            img {
+                width: 100%;
+            }
         }
 
         .social {
