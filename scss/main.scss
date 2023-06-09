@@ -45,10 +45,13 @@ body {
     background-repeat: no-repeat;
     padding-bottom: 10%;
     text-align: end;
+    @include Tablet{
+        text-align: center;
+    }
 
 
     h1 {
-        text-align: left;
+        text-align: start;
 
         @include Mobile-L {
             font-size: 70px;
@@ -58,12 +61,15 @@ body {
             font-size: 50px;
         }
 
-        font-size: 100px;
+        font-size: 122px;
         font-family: $font-family_1;
 
     }
 
     h2 {
+        @include Tablet{
+            text-align: center;
+        }
         text-align: end;
         font-size: 30px;
         color: #9e56a1;
@@ -71,11 +77,17 @@ body {
     }
 
     p {
+        @include Tablet{
+            text-align: center;
+        }
         text-align: end;
     }
 
     button {
-
+        @include Tablet{
+        margin-left: 0;
+            text-align: center;
+        }
         background-color: #350a37;
         color: white;
         font-size: 15px;
@@ -202,26 +214,46 @@ body {
 
 .client {
     position: relative;
-    width: 100%;
 
     .c-img {
-        @include Tablet {
-            display: none;
-        }
-
-        width: 95%;
-
         img {
-            width: 80%;
+            @include Tablet{
+                display: none;
+                width: 100%;
+            }
+            width: 100%;
         }
-    }
+
+        position: relative;
         margin-left: 20%;
         margin-right: 5%;
         z-index: -1;
     }
 
+    // .c-img {
+    //     img {
+    //         width: 100%;
+
+    //         @include Tablet {
+    //             position: relative;
+    //             width: 80%;
+    //             left: 6%;
+    //         }
+    //     }
+
+    //     // position: absolute;
+    //     // margin-left: 18%;
+    //     z-index: -1;
+    // }
 
     .ctext {
+        @include Tablet{
+            position: relative;
+            width: 95%;
+            left: 0;
+            top: 0;
+            margin: 0 20px 0;
+        }
         width: 556px;
         height: 400px;
         background: #34073f;
@@ -279,6 +311,9 @@ body {
     }
 
     .whiteborder {
+        @include Tablet{
+            display: none;
+        }
         width: 555px;
         height: 400px;
         background: transparent;
@@ -291,6 +326,9 @@ body {
     }
 
     .purpleborder {
+        @include Tablet{
+            display: none;
+        }
         width: 555px;
         height: 400px;
         background: transparent;
@@ -301,7 +339,7 @@ body {
         z-index: -1;
         padding: 52px 80px 20px 80px;
     }
-
+}
 
 
 
@@ -474,7 +512,7 @@ body {
         background: white;
         color: #9d54a0;
         padding: 10px 60px;
-        margin: 0 30%;
+        // margin: 0 23% 0;
         float: none;
 
         // align-self: center;
@@ -560,10 +598,6 @@ body {
                 transform: translate(-50%, -50%) rotate(45deg);
             }
         }
-
-        // a{
-
-        // }
     }
 
     .footertext {
