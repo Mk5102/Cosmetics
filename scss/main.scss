@@ -45,7 +45,8 @@ body {
     background-repeat: no-repeat;
     padding-bottom: 10%;
     text-align: end;
-    @include Tablet{
+
+    @include Tablet {
         text-align: center;
     }
 
@@ -67,9 +68,10 @@ body {
     }
 
     h2 {
-        @include Tablet{
+        @include Tablet {
             text-align: center;
         }
+
         text-align: end;
         font-size: 30px;
         color: #9e56a1;
@@ -77,17 +79,19 @@ body {
     }
 
     p {
-        @include Tablet{
+        @include Tablet {
             text-align: center;
         }
+
         text-align: end;
     }
 
     button {
-        @include Tablet{
-        margin-left: 0;
+        @include Tablet {
+            margin-left: 0;
             text-align: center;
         }
+
         background-color: #350a37;
         color: white;
         font-size: 15px;
@@ -117,6 +121,9 @@ body {
     }
 
     .wel-text {
+        @include Laptop{
+            top: 70px;
+        }
         @include Tablet {
             position: relative;
             width: 100%;
@@ -138,6 +145,7 @@ body {
         color: #ffffff;
         text-align: center;
         z-index:+1;
+
         h3 {
             font-size: 30px;
             margin: 0;
@@ -146,10 +154,14 @@ body {
         }
 
         p {
+            @include Tablet{
+                padding: 0 0 0;
+            }
             font-size: 18px;
             line-height: 20px;
             height: 140px;
             overflow: hidden;
+            padding: 0 15px 0;
             margin: 20px 0;
         }
 
@@ -163,6 +175,9 @@ body {
     }
 
     .whiteborder {
+        @include Laptop{
+            top: 105px;
+        }
         @include Tablet {
             display: none;
         }
@@ -179,6 +194,9 @@ body {
     }
 
     .purpleborder {
+        @include Laptop{
+            top: 125px;
+        }
         @include Tablet {
             display: none;
         }
@@ -208,8 +226,9 @@ body {
             font-size: 30px;
         }
     }
-    .service{
-        p{
+
+    .service {
+        p {
             margin-bottom: 10px;
         }
     }
@@ -217,14 +236,17 @@ body {
 
 .client {
     position: relative;
+
     .c-img {
         img {
-            @include Tablet{
+            @include Tablet {
                 display: none;
                 width: 100%;
             }
+
             width: 100%;
         }
+
         position: relative;
         margin-left: 20%;
         margin-right: 5%;
@@ -232,10 +254,11 @@ body {
     }
 
     .ctext {
-        @include Laptop{
-            top:30px
+        @include Laptop {
+            top: 70px
         }
-        @include Tablet{
+
+        @include Tablet {
             position: relative;
             width: 95%;
             left: 0;
@@ -243,15 +266,18 @@ body {
             padding: 40px 37px 0;
             margin: 0 18.5px 0;
         }
-        @include Mobile-L{
+
+        @include Mobile-L {
             margin: 0 9px 0;
             padding: 25px 9px 0;
         }
-        @include Mobile-S{
+
+        @include Mobile-S {
             margin: 0 9px 0;
             padding: 15px 9px 0;
             height: 395px;
         }
+
         width: 556px;
         height: 365px;
         background: #34073f;
@@ -290,11 +316,13 @@ body {
         }
 
         .nimg {
-          @include Mobile-S{
-            display: flex;
-          }
+            @include Mobile-S {
+                display: flex;
+            }
+
             float: right;
             margin-right: -1%;
+
             .nimgm {
                 display: flex;
                 flex-direction: column;
@@ -303,19 +331,22 @@ body {
                 margin-right: 60px;
                 text-align: center;
             }
-            img{
+
+            img {
                 padding-right: 15px;
             }
         }
     }
 
     .whiteborder {
-        @include Laptop{
-            top:60px
+        @include Laptop {
+            top: 100px
         }
-        @include Tablet{
+
+        @include Tablet {
             display: none;
         }
+
         width: 555px;
         height: 365px;
         background: transparent;
@@ -323,17 +354,20 @@ body {
         position: absolute;
         left: 130px;
         top: 110px;
-        z-index: +2;
+        z-index:+2;
         padding: 52px 80px 20px 80px;
     }
 
     .purpleborder {
-        @include Laptop{
-            top:80px
+        @include Laptop {
+            top: 120px;
+            left: 150px;
         }
-        @include Tablet{
+
+        @include Tablet {
             display: none;
         }
+
         width: 555px;
         height: 365px;
         background: transparent;
@@ -350,9 +384,11 @@ body {
 
 .nimg {
     position: relative;
+
     .nimgm {
         display: block;
         float: right;
+
         .img {
             display: block;
             width: 100%;
@@ -556,20 +592,24 @@ body {
 
         .logo {
             width: 100%;
+
             img {
                 width: 100%;
             }
         }
 
         .social {
+            // display: flex;
+            // flex-direction: column;
             margin-left: 8%;
             // margin-top: 5%;
             text-align: center;
 
             .socialicon {
-                @include Tablet{
+                @include Tablet {
                     margin-right: 25px;
                 }
+
                 margin-top: 10%;
                 padding-top: 15%;
                 background: #1d191a;
@@ -584,6 +624,7 @@ body {
                 transform: rotate(-45deg);
                 margin-right: 26px;
             }
+
             a {
                 margin-top: 10%;
                 font-size: 22PX;
@@ -602,9 +643,10 @@ body {
     }
 
     .footertext {
-        @include Mobile-L{
+        @include Mobile-L {
             height: 56px;
         }
+
         background-color: black;
         color: white;
         text-align: center;

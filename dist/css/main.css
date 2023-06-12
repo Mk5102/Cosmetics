@@ -131,6 +131,11 @@ body {
   text-align: center;
   z-index: 1;
 }
+@media (max-width: 1024px) {
+  .Welcome .wel-text {
+    top: 70px;
+  }
+}
 @media (max-width: 768px) {
   .Welcome .wel-text {
     position: relative;
@@ -155,7 +160,13 @@ body {
   line-height: 20px;
   height: 140px;
   overflow: hidden;
+  padding: 0 15px 0;
   margin: 20px 0;
+}
+@media (max-width: 768px) {
+  .Welcome .wel-text p {
+    padding: 0 0 0;
+  }
 }
 .Welcome .wel-text .btn {
   background: white;
@@ -175,6 +186,11 @@ body {
   z-index: 2;
   padding: 52px 80px 20px 80px;
 }
+@media (max-width: 1024px) {
+  .Welcome .whiteborder {
+    top: 105px;
+  }
+}
 @media (max-width: 768px) {
   .Welcome .whiteborder {
     display: none;
@@ -190,6 +206,11 @@ body {
   top: 170px;
   z-index: 0;
   padding: 52px 80px 20px 80px;
+}
+@media (max-width: 1024px) {
+  .Welcome .purpleborder {
+    top: 125px;
+  }
 }
 @media (max-width: 768px) {
   .Welcome .purpleborder {
@@ -242,7 +263,7 @@ body {
 }
 @media (max-width: 1024px) {
   .client .ctext {
-    top: 30px;
+    top: 70px;
   }
 }
 @media (max-width: 768px) {
@@ -326,7 +347,7 @@ body {
 }
 @media (max-width: 1024px) {
   .client .whiteborder {
-    top: 60px;
+    top: 100px;
   }
 }
 @media (max-width: 768px) {
@@ -347,7 +368,8 @@ body {
 }
 @media (max-width: 1024px) {
   .client .purpleborder {
-    top: 80px;
+    top: 120px;
+    left: 150px;
   }
 }
 @media (max-width: 768px) {
