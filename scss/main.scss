@@ -570,7 +570,7 @@ body {
 
         .social {
             margin-left: 8%;
-            margin-top: 5%;
+            // margin-top: 5%;
             text-align: center;
 
             .socialicon {
@@ -609,8 +609,8 @@ body {
     }
 
     .footertext {
-        @include Mobile-M{
-            height: 60px;
+        @include Mobile-L{
+            height: 56px;
         }
         background-color: black;
         color: white;

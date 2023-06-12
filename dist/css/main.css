@@ -526,7 +526,6 @@ body {
 }
 .footer .Follow .social {
   margin-left: 8%;
-  margin-top: 5%;
   text-align: center;
 }
 .footer .Follow .social .socialicon {
@@ -568,8 +567,8 @@ body {
   text-align: center;
   height: 40px;
 }
-@media (max-width: 375px) {
+@media (max-width: 427px) {
   .footer .footertext {
-    height: 60px;
+    height: 56px;
   }
 }/*# sourceMappingURL=main.css.map */
